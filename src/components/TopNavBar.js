@@ -15,7 +15,8 @@ const navbar_style = {
     top: 0,
     left: 0,
     right: 0,
-    fontFamily:'Arvo, serif'
+    fontFamily:'Arvo, serif',
+    zIndex: '1000'
     
 }
 
