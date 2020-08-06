@@ -42,7 +42,7 @@ function EditSubs(props) {
 
     const moneyInputStyle={
         width: '75vw',
-        height: '20vh',
+        height: '200px',
         textAlign: 'center',
         fontSize: '10vw',
         fontFamily: 'Crete Round, serif'
