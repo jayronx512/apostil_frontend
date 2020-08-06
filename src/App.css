@@ -57,6 +57,7 @@ label.Mui-focused {
   min-height: 100px;
   position: fixed;
   width: 100%;
+  overflow-y: scroll;
 }
 #signup {
   width: 80vw;
