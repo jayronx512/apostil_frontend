@@ -17,6 +17,7 @@ import {
 import Button from '@material-ui/core/Button'
 import axios from 'axios';
 import TopNavBar from '../components/TopNavBar'
+import Loading from '../components/Loading'
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -32,6 +33,7 @@ function EditSubs(props) {
     const jwt = localStorage.getItem('jwt')
     const classes= useStyles()
     const history = useHistory()
+    const [isLoading, setIsLoading] = useState(true)
     const [initialSub, setInitialSub] = useState({
         name: '',
         amount: 0.00,
@@ -131,6 +133,7 @@ function EditSubs(props) {
                 subs_type: '',
                 payment_date: new Date(),
             })
+            setIsLoading(false)
         })
 
         .catch(err => {
@@ -154,6 +157,10 @@ function EditSubs(props) {
     // get_subs()
     useEffect(get_subs,[])
 
+    if (isLoading) {
+        return <Loading /> 
+    }
+    
     return (
         <div>
             <TopNavBar title="" backpath="/home" />
