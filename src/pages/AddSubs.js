@@ -50,7 +50,7 @@ function AddSubs() {
 
     const moneyInputStyle={
         width: '75vw',
-        height: '60px',
+        height: '80vh',
         textAlign: 'center',
         fontSize: '10vw',
         fontFamily: 'Crete Round, serif'
