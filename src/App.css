@@ -53,7 +53,7 @@ label.Mui-focused {
 
 #signup-container {
   top: 55px;
-  min-height: 200px;
+  min-height: 100px;
   position: fixed;
   width: 100%;
 }
